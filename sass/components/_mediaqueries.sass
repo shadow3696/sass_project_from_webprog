@@ -1,0 +1,91 @@
+@media screen and ( min-width: 576px )
+    .svg__img
+        width: 100%
+
+    .home
+        padding-top: 6rem
+
+    .home__container,
+    .about__container,
+    .support__container,
+    .services__container,
+    .app__container,
+    .contact__container
+        grid-template-columns: repeat(2, 1fr)
+        align-items: center
+        column-gap: 2rem
+
+    .about__info
+        order: -1
+        text-align: left
+
+
+    .contact
+        direction: rtl
+
+        &__info
+            justify-content: end
+            text-align: end
+
+
+    .support__info,
+    .home__info,
+    .app__info,
+    .contact__description,
+    .contact__button
+        text-align: right
+
+
+@media screen and ( min-width: 767px )
+    .nav
+        .nav__list
+            flex-direction: row
+            column-gap: 2.5rem
+
+        &__toggle
+            display: none
+
+    .app__buttons
+        justify-content: end
+
+    .app__container
+        column-gap: 4rem
+
+@media screen and ( min-width: 800px )
+    h1
+        font-size: 3rem
+    
+    h2
+        font-size: 2.5rem
+    
+    h3
+        font-size: 1.75rem
+    
+    h4
+        font-size: 1rem
+
+@media screen and ( min-width: 992px )
+    .container
+        width: 95vw
+
+        .svg__img
+            width: 500px
+
+    .button__header
+        display: block
+        padding: 0.4rem 1.5rem
+
+    .home__container,
+    .about__container,
+    .support__container,
+    .app__container
+        column-gap: 6rem
+
+    .services__container
+        grid-template-columns: repeat(3, 1fr)
+
+    .contact__title
+        text-align: right
+
+    .app__buttons
+        justify-content: end

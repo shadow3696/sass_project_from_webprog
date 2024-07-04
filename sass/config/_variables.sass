@@ -1,0 +1,40 @@
+@font-face
+  font-family: "vazir"
+  src:
+     url: ("../fonts/vazir/Vazir-FD-WOL.woff2") format("woff2"),
+     url: ("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
+     url: ("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype")
+  font-weight: normal
+  font-style: normal
+
+// masiri ke inja tarif mikonim bayad nesbat be file css bashe chon
+// sass inaro miad var midare haminjori mizare to file css
+
+:root
+
+     // 227 , 47%, 52%
+     // 179 , 70%, 45%
+
+     // hsl(hue => color.deg, saturation => 0%-100%, lightness => 0%-100%)
+     // 0deg = red | 30deg = orange | 60deg = yellow | 90deg = spring-green | 120deg = green | 150deg = turquose
+     // 255-0-0    | 255-125-0      | 255-255-0      | 125-225-0            | 0-255-0        | 0-255-125
+     // 180deg = cyan | 210deg = ocean | 240deg = blue | 270deg = violet | 300deg = magenta | 330deg = respberry
+     // 0-255-255     | 0-125-255      | 0-0-255       | 125-0-255       | 255-0-255        | 255-0-125
+
+     --hue: 227
+     --sat: 47%
+
+
+     --primary-color: hsl(var(--hue), var(--sat), 52%)
+     --primary-color-light: hsl(var(--hue), var(--sat), 85%)
+     --primary-color-lighten: hsl(var(--hue), var(--sat), 80%)
+     --secondary-color: hsl(var(--hue), var(--sat), 53%)
+
+
+     --title-color: hsl(var(--hue), 4%, 15%)
+     --text-color: hsl(var(--hue), 4%, 35%)
+     --text-color-light: hsl(var(--hue), 4%, 65%)
+     --body-color: hsl(var(--hue), 0%, 100%)
+     --container-color: #FFF
+     --ff-primary: 'vazir', sans-serif
+

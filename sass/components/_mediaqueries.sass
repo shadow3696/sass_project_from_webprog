@@ -15,6 +15,10 @@
         align-items: center
         column-gap: 2rem
 
+    .footer__social
+        justify-content: right
+
+
     .footer__container
         grid-template-columns: repeat(2, 1fr)
 
@@ -53,6 +57,9 @@
 
     .app__container
         column-gap: 4rem
+
+    .change-theme
+        position: unset
 
 @media screen and ( min-width: 800px )
     h1
@@ -101,5 +108,7 @@
             grid-template-columns: repeat(5, 1fr)
         
         &__social
+            justify-content: center
+            margin: 0 auto
             &__link
                 font-size: 1.4rem
